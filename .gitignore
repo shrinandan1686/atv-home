@@ -1,0 +1,13 @@
+# private: the key the TV trusts, and device backups (settings, serials)
+adbkey
+adbkey.pub
+backup/
+shots/
+# local tooling / build output
+.venv/
+dl/
+launcher/build/
+launcher/.gradle/
+launcher/.kotlin/
+launcher/local.properties
+.DS_Store

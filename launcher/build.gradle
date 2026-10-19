@@ -1,0 +1,17 @@
+plugins { id 'com.android.application' version '9.3.3' }
+
+android {
+    namespace 'dev.atvhome'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'dev.atvhome'
+        minSdk 30          // TV runs Android 11
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes { debug { minifyEnabled true; proguardFiles getDefaultProguardFile('proguard-android-optimize.txt') } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+
+dependencies { implementation 'androidx.recyclerview:recyclerview:1.4.0' }
